@@ -1,0 +1,272 @@
+/* css reset */
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin:0px;
+    padding:0px;
+}
+
+/* css variable */
+:root{
+    --navbar-height:59px;
+}
+
+
+/* navigation bar : logo &img  */
+#logo{
+    margin: -17px -11px;
+    height: 95px;
+
+}
+#logo img{
+    margin:7px 6px;
+    /* filter:invert(100%); */
+    border-radius:50%;
+}
+/* navigation bar */
+#navbar{
+    display:flex;
+    align-items: center;
+    position:sticky;
+    top:0px;
+    text-shadow: 1px 1px rgb(92, 92, 90);
+}
+#navbar ul{
+    display:flex;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: o.8rem;
+}
+#navbar ul li a{
+    color:white ;
+     display:block;
+     padding:3px 22px;
+     border-radius: 20px;
+     text-decoration: none;
+     /* font-family: 'EB Garamond', serif; */
+     font-family: 'Bree Serif', serif;
+
+     
+}
+#navbar ul li a:hover{
+    color:rgb(6, 7, 6);
+    background-color: rgb(239, 210, 210);
+
+}
+
+
+#navbar::before{
+    content:"";
+    background-color: black;
+    position: absolute;
+    height:100%;
+    width:100%;
+    z-index: -1;
+    opacity:0.6;
+    top:0px;
+    left:0px;
+    
+}
+/* home section */
+#home{
+    display:flex;
+    flex-direction: column;
+    padding:3px 200px;
+    justify-content: center;
+    align-items: center;
+    height:477px;
+
+}
+#home::before{
+    content:"";
+    background:url('food2.jpg') center ;
+    position: absolute;
+    height:100%;
+    width:100%;
+    top:0px;
+    left:0px;
+    z-index: -1;
+    opacity:0.9;
+    background-repeat: no-repeat;
+    background-size: cover; 
+
+}
+#home h1{
+    
+    text-align:center;
+    font-size:2.5rem;
+    font-family: 'Bree Serif', serif;
+
+}
+/* utility classes */
+.h-primary{
+    font-size: 3rem;
+    padding:12px;
+    font-family: 'Bree Serif', serif;
+}
+
+.h-primary center{
+    font-size:3rem;
+    padding:12px;
+    font-family: 'Bree Serif', serif;
+    
+}
+.h-secondary center{
+    font-family: 'Bree Serif', serif;
+    padding:12px;
+    font-family: 'Prompt', sans-serif;
+    /* font-size: 1.9rem; */
+
+    
+    
+}
+
+
+section  p{
+    
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    font-size: 1.2rem;
+    margin: 5px;
+    color: rgb(12, 11, 11);
+    /* font-weight: bold; */
+}
+
+.btn{
+    padding:6px 20px;
+    border:2px solid white;
+    background-color:hsl(35, 51%, 52%);
+    border-radius: 20px;
+    color:white;
+    margin: 17px;
+    font-size: 1rem;
+    cursor:pointer
+    
+}
+.btn:hover{
+    background-color: white;
+    color:black;
+    cursor:pointer;
+    text-shadow: 1px 1px salmon;
+    font-weight: bold;
+}
+.center{
+    text-align:center;
+    padding:5px;
+}
+/* services section */
+
+
+#services{
+    margin:34px;
+    display:flex;
+}
+#services .box{
+
+    border:2px solid rgb(251, 247, 247); 
+    border-style: outset;
+    padding:34px;
+    margin:3px 5px;
+    border-radius: 23px;
+    /* background-color:  #f6f667; */
+    width:420px;
+    height:400px;
+}
+
+
+
+#services .box img{
+    height:155px;
+    display:block;
+    margin:auto;
+}
+
+
+/* client section*/
+ 
+/*#client-section{
+     /* height: 344px;  
+
+}*/
+#clients{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#clients img{
+    height:124px;
+}
+.client-item{
+    padding:17px;
+}
+
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url('final background.jpg')  no-repeat center;
+    width:100%;
+    height:122%;
+    z-index:-1;
+    opacity:0.7;
+    background-size: cover;
+    top: 630px;
+}
+
+
+
+/* contact-section */
+
+#contact{
+    position:relative;
+    
+
+}
+
+#contact::before{
+    content:"";
+    background: url('contact.jpg');
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    top:0px;
+}
+footer{
+    background:black;
+    color:white;
+    padding:9px 20px;
+}
+
+
+#contact-box input,
+#contact-box textarea{
+     width:100%;
+    padding:0.5rem;
+    border-radius: 9px;
+    font-size:0.9rem;
+    font-family: 'Bree Serif', serif;
+
+}
+
+#contact-box{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-weight: bold;
+    padding-bottom: 34px;
+}
+#contact-box form{
+    width:40%;
+}
+#contact-box label{
+    font-size: 1rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+
+
+
